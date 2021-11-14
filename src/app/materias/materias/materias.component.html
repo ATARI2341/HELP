@@ -1,0 +1,26 @@
+
+<div class="test1">
+<div *ngFor="let materia of materias" >    
+    <div >          
+        
+        <img src="{{materia.imagen}}" alt="" style="width: 100px; border-radius: 30%;">
+    
+        <div class="divicion">
+   <div>
+ <h1 style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-size: 50px;">
+    {{materia.nombre}}
+ </h1>
+</div>            
+<div>
+ <p style="font-size: 30px;">
+    ${{materia.precio}}
+   </p> 
+</div>
+</div>
+<h2 style="font-family:monospace;">
+ {{materia.descripcion}}
+</h2>
+    
+</div>
+</div>
+</div>

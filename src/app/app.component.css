@@ -64,12 +64,12 @@ height: 5vh;
 
 .contenedor{      
     height: 100%;     
-    overflow-y: scroll;    
+    /*overflow-y: scroll;   */
     /* cambiar el estilo por defecto de la barra de scroll */
     scrollbar-color: rgba(117, 24, 46, 0.8) rgb(160, 159, 159);
     scrollbar-width: 10px;    
     min-width: 500px;
-    max-width: 1200px;
+    max-width: 900px;
     margin: auto;
     background-color: rgba(255, 255,255,.9);
 }
@@ -93,39 +93,40 @@ height: 5vh;
 .logo1 img{
 
     border-radius: 50%;
-    width: 80px;
-    height: 80px;
+    width: 30px;
+    height: 30px;
    }
 
 header{
-    width: 100%;
-    font-size: 16px;
+    margin: auto;
+    width: 80%;
+    
 }
  .menu{
-    background: rgba(117, 24, 46, 0.8);
-    margin-bottom: 10px;
+    background: rgba(117, 24, 46, 0.8);    
     -webkit-transition: all  ease .5s;
     -o-transition: all  ease .5s;
     transition: all ease .5s; 
-    z-index: 0;   
+    z-index: 10000;   
+    ;
 }
 
 header nav ul{
     padding: 0;
     list-style: none;
     overflow: hidden;
+    z-index: 10000;
 
 }
 
 header nav ul li{   
-    float: left;
- 
+    float: left;    
 }
 
-header nav ul li a{
+header nav ul li a{    
     display: block;
-    padding: 30px;
-    color: #fff;
+    padding: 10px;
+    color: #fff;    
     text-decoration: none;
 }
 header nav ul li a:hover
@@ -159,7 +160,7 @@ header nav ul li a img{
 
 .menu-fixed{
     
-    width: 100%;
+    width: 80%;
     position: fixed;    
     z-index: 1000;
     top:0;   
@@ -239,6 +240,13 @@ footer{
     .menub:checked ~ .menu ul li{
     display: block;
     width: 100%;
+    }
+    .menub{
+        display: block;
+        background: rgba(117, 24, 46, 0.8);        
+    }    
+    .menub img{
+        width: 10%;
     }
 
 }

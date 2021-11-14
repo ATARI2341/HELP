@@ -23,15 +23,10 @@ $(document).ready(function(){
     )
     $( ".menub" ).on('click',
     function() {
-        if( $(this).prop('checked')){
-
-            $('.menub').prop('checked', false);
-        }
-     else{
-        $('.menub').prop('checked', true);
-        r=1;
-        
-     }   
+        $('menu').css({
+            'transform': 'translate(0%)'
+        }) 
       });
 }
 )
+

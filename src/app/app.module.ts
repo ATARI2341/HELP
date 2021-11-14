@@ -7,13 +7,14 @@ import { PrecentacionComponent } from './precentacion/precentacion.component';
 import { SliderComponent } from './slider/slider.component';
 import {  NgbModule,NgbCarouselConfig  } from '@ng-bootstrap/ng-bootstrap';
 import { RevistaComponent } from './revista/revista.component';
+import { MateriasComponent } from './materias/materias/materias.component';
 
 enableProdMode();
 @NgModule({
   declarations: [
     AppComponent,
     PrecentacionComponent,    
-    SliderComponent, RevistaComponent
+    SliderComponent, RevistaComponent, MateriasComponent
   ],
   imports: [
     NgbModule,

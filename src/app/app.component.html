@@ -1,4 +1,4 @@
-<div class="main">
+<div class="main">  
 <header > 
   <div class="redes">
       <P class="texto" >
@@ -6,55 +6,62 @@
       </P>
          Correo Electrónico: colegiodeabogadoscaijejac@gmail.com        
   </div>
-  <label for="" class="menub" id="b"><a><img src="../assets/materiales/iconos/pngegg.png" alt=""></a></label>
-<nav class="menu">
+  <!--<label for="" class="menub" id="b"><a><img src="../assets/materiales/iconos/pngegg.png" alt=""></a></label> -->
+  <div style="width: 20px; height: 20px;"></div>
+<nav class="menu">  
 <ul >  
 <li>
 <div class="logo1">
   <img src="../assets/materiales/logo.jpg" alt="test1" class="">
   </div>    
 </li>
-<li><a [routerLink]="['']">CAIJEJ A.C. INICIO</a>
+<li><a [routerLink]="['']">CAIJEJ A.C.</a>
 
 <ul >
 <li>
-<a href="">HISTORIA</a>
+<a href="">Historia</a>
 
 </li>
 <li>
 
-<a href="">QUIENES SOMOS
-  PRESIDENTE
-  CONSEJO DIRECTIVO
-  COMITE        </a>
+<a href="#quienes_somos">Quienes somos</a>
 
 </li>
 <li>
-<a href="">CONVENIOS DE COLABORACION</a>
+<a href="">Convenio de colaboración</a>
 
 </li>
 <li>
-<a href="">NORMATIVIDAD
-  LEY
-  REGLAMENTO    </a>
+<a href="">Normatividad ley reglamento</a>
   
 </li>
 <li>
-<a href="">CODGIO DE ETICA</a>
+<a href="">Codigo de etica</a>
 
 </li>
 </ul>
 
 </li>
-<li><a href=""><img src="" alt="">            BENEFICIOS</a></li>
-<li><a href=""><img src="" alt="">              CERTIFICACION</a></li>
-<li><a  [routerLink]="['revista']"><img  alt="">REVISTA DIGITAL</a></li>
-<li><a href=""><img src="" alt="">NOTICIAS Y  EVENTOS</a></li>
-<li><a href=""><img src="" alt="">CANAL DE YOUTUBE</a></li>
-<li><a href=""><img src="" alt="">CONTACTO </a></li>
+<li><a href=""><img src="" alt="">            Beneficios</a></li>
+<li><a href=""><img src="" alt="">              Certificacion</a></li>
+<li><a  [routerLink]="['revista']"><img  alt="">Revista digital</a></li>
+<li><a href=""><img src="" alt="">Noticias y eventos</a></li>
+<!--<li><a href=""><img src="" alt="">CANAL DE YOUTUBE</a></li>-->
+<li><a href=""><img src="" alt="">Contacto </a></li>
 </ul>
 </nav>
 </header>
+<!--<svg>
+  <g>
+    <rect x="0" y="0" width="100" height="100" [attr.fill]="fillColor" (click)="changeColor()" />
+    <text x="120" y="50">click the rectangle to change the fill color</text>
+  </g>
+</svg>-->
+
+
+<div class="menub" >
+  <img src="../assets/materiales/iconos/pngegg.png" alt="" >
+</div>
 <div class="contenedor">
 <router-outlet></router-outlet>
 <script src="../assets/funciones/jquery.js"></script>
